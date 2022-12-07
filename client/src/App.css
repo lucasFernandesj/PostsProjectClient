@@ -1,0 +1,455 @@
+ .App {
+  text-align: center;
+  
+}
+
+body{
+  background-color:rgb(243, 245, 247);
+  
+ 
+}
+/* *******************  NAV ****************** */
+.Nav{
+  position: sticky;
+  top: 0;
+  text-align:right;
+  padding: 5px;
+  background-color: rgb(33, 2, 68);
+  z-index: 1000;
+}
+
+.Nav-Link{
+  margin: 3px;
+  margin-right:8px;
+  color: white !important ;
+  font-size: large;
+  padding: 5px;
+}
+
+.Nav-Link:hover{
+  background-color: rgb(76, 2, 161);
+}
+
+a:link,a:visited,a:hover ,a:active{
+  text-decoration: none; 
+  color:#000;
+}
+
+.btn-nav-link{
+  background-color: rgb(44, 2, 93);
+}
+/* *******************  NAV ****************** */
+
+/* ******************LOG IN *********************** */
+
+.login-form-container{
+  float: right;
+  width: 50%;
+  margin-top: 10%;
+ height: 300px;
+ /* border:3px solid black; */
+ display: flex;
+ 
+ 
+}
+
+.greeting-header{
+  font-size: 60px;
+}
+
+.greeting-p{
+  font-size: 30px;
+}
+
+.login-form{
+  margin-top: 30px;
+}
+
+.login{
+  background-color: white;
+  width: 350px;
+  margin-left: 30%;
+  height: 400px;
+  padding: 20px;
+  border: 2px solid black;
+ padding: 10px;
+ border-radius: 25px;
+
+}
+
+.login-page-msg{
+  
+  margin-top: 13%;
+  float: left;
+  width: 50%;
+  
+  
+  
+}
+
+.input-login{
+  border-radius: 15px;
+  padding: 5px;
+  margin:2px ;
+}
+
+
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, .1);
+  color: rgba(255, 255, 255, .8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+
+.hr-login{
+  width: 90%;
+  margin-top: 15px;
+}
+
+.button-7 {
+  background-color: #0095ff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-7:hover,
+.button-7:focus {
+  background-color: #07c;
+}
+
+.button-7:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-7:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+
+/* ******************LOG IN *********************** */
+
+/********************* Home.js********************** */
+
+.myposts-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-posts-header{
+  font-size: 33px;
+}
+
+#title-header{
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#post-body{
+  text-align: left;
+  padding: 8px;
+  background-color: white;
+  min-height: 200px;
+  margin-bottom: 40px;
+  margin-top: 0px;
+  border-radius: 8px;
+}
+
+.input-filter-myposts{
+  border-radius: 8px;
+  padding: 3px;
+  margin-bottom: 20px;
+}
+
+
+.post-div{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  position: relative;
+  width: 400px;
+  min-height: 300px;
+  border: 3px solid black;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: rgb(230, 224, 224);
+}
+
+.edit-delete-container{
+  position: absolute;
+  /* margin: auto;  */
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 30%;
+  padding: 5px; 
+}
+
+.edit-btn{
+  margin-right: 6px;
+  height: 30px;
+  width: 70px;
+  background-color: rgb(149,208,58);
+  color: white;
+  /* font-weight: bolder; */
+  font-size: large;
+  border-radius: 5px;
+  
+}
+
+.edit-btn:hover{
+  background-color: rgb(128, 186, 39);
+}
+
+.delete-btn:hover{
+  background-color: rgb(174, 3, 9);
+}
+
+.delete-btn{
+  height: 30px;
+  width: 70px;
+  background-color: rgb(203,32,39);
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  border-radius: 5px;
+}
+
+
+
+/* ****ALL THREADS****** */
+
+
+.like-p{
+  margin-top:0px;
+}
+
+
+
+
+
+.like-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+  width: 60px;
+  height: 30px;
+  padding: 7px;
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 33px;
+}
+
+/* .like-btn:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+} */
+
+.like-btn:hover{
+  cursor: pointer;
+  background: linear-gradient(180deg, #347deb 0%, #155ce1 100%);
+}
+
+.like-container{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+/* *********Modal************ */
+
+.modal{
+  max-width: 500px;
+  max-height: 500px;
+  border: 3px solid black;
+  border-radius: 8px;
+  background-color: rgb(245,245,250);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: 650px;
+  margin-top: 170px;
+}
+
+.modal-header{
+  text-align: center;
+}
+
+.modal-input-title{
+  border-radius: 5px;
+  padding: 4px;
+  height: 15px;
+  width: 200px;
+  margin: 10px;
+}
+
+.modal-textarea-body{
+  padding: 4px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.modal-submit-btn{
+  margin-left: 200px;
+  background-color: rgb(24,118,255);
+  border: #0064bd;
+}
+
+
+
+/* CSS */
+.modal-submit-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  color: #fff;
+  background: linear-gradient(180deg, #4B91F7 0%, #367AF6 100%);
+   background-origin: border-box;
+  box-shadow: 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.modal-submit-btn:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1.5px rgba(54, 122, 246, 0.25), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
+.modal-close-btn{
+  width: 68px;
+  margin-left: 200px;
+  margin-top: 10px;
+  background-color: rgb(110,109,112);
+ 
+}
+
+
+
+/* CSS */
+.modal-close-btn {
+  background-image: linear-gradient(#f7f8fa ,#e7e9ec);
+  border-color: #adb1b8 #a2a6ac #8d9096;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 3px;
+  box-shadow: rgba(255,255,255,.6) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 14px;
+  height: 29px;
+  font-size: 13px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.modal-close-btn:active {
+  border-bottom-color: #a2a6ac;
+}
+
+.modal-close-btn:active:hover {
+  border-bottom-color: #a2a6ac;
+}
+
+.modal-close-btn:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+}
+
+.modal-close-btn:focus {
+  border-color: #e77600;
+  box-shadow: rgba(228, 121, 17, .5) 0 0 3px 2px;
+  outline: 0;
+}
